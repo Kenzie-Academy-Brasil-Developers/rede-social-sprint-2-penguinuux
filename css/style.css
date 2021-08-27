@@ -19,12 +19,15 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	--text-colors: #262626;
 	--light-color: #c7c7c7;
 	--background-color: #fafafa;
+	--border-color: #dbdbdb;
+	--border: 1px solid #dbdbdb;
 }
 
 /*BODY*/
 body{
 	font-family: Helvetica, Arial, sans-serif;	
 	color: var(--text-colors);
+	background-color: var(--background-color);
 }
 .container{
 	width: 935px;
@@ -42,7 +45,8 @@ p{
 
 /*TOPO*/
 header{
-	height: 50px;
+	height: 55px;
+	background-color: #fff;
 	border-bottom: 1px solid var(--light-color);
 	margin-bottom: 35px;
 }
@@ -90,7 +94,7 @@ main .profile-photo figure img{
 	border-radius: 100%;
     padding: 4.5px;
     border: 2px solid var(--light-color);
-    background-color: #ffffff;
+	background-color: var(--background-color);
 }
 
 main .profile-info{
@@ -118,15 +122,31 @@ main .profile-info__item p{}
 main .profile-info__item a{}
 
 
-main .highlighted-stories{}
-main .add-new-highlight{}
+main .highlighted-stories{
+	margin-top: 40px;
+    border: 2px solid var(--light-color);
+    padding: 15px 0 15px 20px;
+	background-color: #ffffff;
+	border: var(--border);
+}
+main .add-new-highlight{
+	display: inline-block;
+	margin-right: 50px;
+}
+main .add-new-highlight__plus-sign{
+}
 main .add-new-highlight figure{}
 main .add-new-highlight figure img{
 	width: 77px;
-	height: 77px;
+    height: 77px;
+    /* background-color: var(--background-color); */
+    border: 1px solid var(--light-color);
+    padding: 2px;
+    border-radius: 100%;
 }
 main .add-new-highlight figure figcaption{
 	font-weight: 700;
+	text-align: center;
 }
 
 main .profile-posts{}
