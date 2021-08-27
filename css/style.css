@@ -16,36 +16,70 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
-  
+	--text-colors: #262626;
 }
 
 /*BODY*/
 body{
-
+	font-family: Helvetica, Arial, sans-serif;	
+}
+.container{
+	width: 935px;
+	height: 100%;
+	margin: 0 auto;
 }
 
 /*TOPO*/
-header{
-	
-}
+header{}
+
+header .instagram-logo{}
 
 /*RODAPÉ*/
-footer{
+footer{}
 
-}
+footer .footer-nav{}
+footer .footer-nav a{}
+
+footer .copyright{}
+footer .copyright p{}
 
 /*PÁGINA INICIAL*/
 main{
 	
 }
-	main .profile-content{
 
-	}
+main .profile-content{}
 
-	main .highlighted-stories{
+main .profile-photo{}
+main .profile-photo figure{}
+main .profile-photo figure img{}
 
-	}
+main .profile-info{}
+main .profile-info h1{}
+main .profile-info h2{}
 
-	main .profile-posts{
+main .profile-data{}
+main .profile-data p{}
+main .profile-data span{}
 
-	}
+main .profile-info__list{}
+main .profile-info__item{}
+main .profile-info__item p{}
+main .profile-info__item a{}
+
+
+main .highlighted-stories{}
+main .add-new-highlight{}
+main .add-new-highlight figure{}
+main .add-new-highlight figure img{}
+main .add-new-highlight figure figcaption{}
+
+main .profile-posts{}
+main .profile-posts__menu{}
+main .profile-posts__menu a{}
+
+main profile-posts__photos-list{}
+main profile-posts__photos{}
+main profile-posts__photos a{}
+main profile-posts__photos a figure{}
+main profile-posts__photos a figure img{}
