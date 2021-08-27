@@ -17,11 +17,14 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 /* VARIÁVEIS */
 :root{
 	--text-colors: #262626;
+	--light-color: #c7c7c7;
+	--background-color: #fafafa;
 }
 
 /*BODY*/
 body{
 	font-family: Helvetica, Arial, sans-serif;	
+	color: var(--text-colors);
 }
 .container{
 	width: 935px;
@@ -29,16 +32,40 @@ body{
 	margin: 0 auto;
 }
 
+h1, h2, h3{
+	margin: 10px 0;
+}
+p{
+	margin: 8px 0;
+	line-height: 1.4;
+}
+
 /*TOPO*/
-header{}
+header{
+	height: 50px;
+	border-bottom: 1px solid var(--light-color);
+	margin-bottom: 35px;
+}
 
 header .instagram-logo{}
+header .instagram-logo figure{
+	width: 935px;
+    margin: 0 auto;
+}
+header .instagram-logo figure img{
+	margin-top: 14px;
+}
 
 /*RODAPÉ*/
-footer{}
+footer{
+	color: var(--light-color);
+}
 
 footer .footer-nav{}
-footer .footer-nav a{}
+footer .footer-nav a{
+	text-decoration: none;
+	color: inherit;
+}
 
 footer .copyright{}
 footer .copyright p{}
@@ -48,19 +75,42 @@ main{
 	
 }
 
-main .profile-content{}
+main .profile-content{
+	display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
-main .profile-photo{}
+main .profile-photo{
+	display: inline-block;
+}
 main .profile-photo figure{}
-main .profile-photo figure img{}
+main .profile-photo figure img{
+	border-radius: 100%;
+    padding: 4.5px;
+    border: 2px solid var(--light-color);
+    background-color: #ffffff;
+}
 
-main .profile-info{}
-main .profile-info h1{}
-main .profile-info h2{}
-
-main .profile-data{}
+main .profile-info{
+	width: 500px;
+}
+main .profile-info h1{
+	font-size: 1.6rem;
+}
+main .profile-info h2{
+	font-weight: bolder;
+}
+main .profile-data{
+	display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
 main .profile-data p{}
-main .profile-data span{}
+main .profile-data span{
+	font-weight: 700;
+}
 
 main .profile-info__list{}
 main .profile-info__item{}
@@ -71,15 +121,31 @@ main .profile-info__item a{}
 main .highlighted-stories{}
 main .add-new-highlight{}
 main .add-new-highlight figure{}
-main .add-new-highlight figure img{}
-main .add-new-highlight figure figcaption{}
+main .add-new-highlight figure img{
+	width: 77px;
+	height: 77px;
+}
+main .add-new-highlight figure figcaption{
+	font-weight: 700;
+}
 
 main .profile-posts{}
 main .profile-posts__menu{}
-main .profile-posts__menu a{}
+main .profile-posts__menu a{
+	text-transform: uppercase;
+	font-weight: 700;
+	text-decoration: none;
+	color: var(--text-colors);
+}
 
-main profile-posts__photos-list{}
-main profile-posts__photos{}
-main profile-posts__photos a{}
-main profile-posts__photos a figure{}
-main profile-posts__photos a figure img{}
+main .profile-posts__photos-list{}
+main .profile-posts__photos{
+	width: 293px;
+    height: 293px;
+}
+main .profile-posts__photos a{}
+main .profile-posts__photos a figure{}
+main .profile-posts__photos a figure img{
+	width: 100%;
+	height: 100%;
+}
