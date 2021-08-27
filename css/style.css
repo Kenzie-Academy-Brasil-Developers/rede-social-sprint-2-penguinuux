@@ -63,12 +63,19 @@ header .instagram-logo figure img{
 /*RODAPÉ*/
 footer{
 	color: var(--light-color);
+	height: 60px;
+	margin: 20px 0 10px 0
+	;
 }
 
-footer .footer-nav{}
+footer .footer-nav{
+	margin: 8px 0;
+	text-align: center;
+}
 footer .footer-nav a{
 	text-decoration: none;
 	color: inherit;
+	font-size: 0.8rem;
 }
 
 footer .copyright{}
@@ -123,7 +130,7 @@ main .profile-info__item a{}
 
 
 main .highlighted-stories{
-	margin-top: 40px;
+	margin: 40px 0 60px 0;
     border: 2px solid var(--light-color);
     padding: 15px 0 15px 20px;
 	background-color: #ffffff;
@@ -133,7 +140,8 @@ main .add-new-highlight{
 	display: inline-block;
 	margin-right: 50px;
 }
-main .add-new-highlight__plus-sign{
+#plus-sign{
+	padding: 23px;
 }
 main .add-new-highlight figure{}
 main .add-new-highlight figure img{
@@ -149,8 +157,17 @@ main .add-new-highlight figure figcaption{
 	text-align: center;
 }
 
-main .profile-posts{}
-main .profile-posts__menu{}
+main .profile-posts{
+	border-top: var(--border);
+}
+main .profile-posts__menu{
+	width: 300px;
+    height: 30px;
+    margin: 10px auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
 main .profile-posts__menu a{
 	text-transform: uppercase;
 	font-weight: 700;
@@ -158,7 +175,14 @@ main .profile-posts__menu a{
 	color: var(--text-colors);
 }
 
-main .profile-posts__photos-list{}
+main .profile-posts__photos-list{
+	height: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+	margin-top: 20px;
+}
 main .profile-posts__photos{
 	width: 293px;
     height: 293px;
