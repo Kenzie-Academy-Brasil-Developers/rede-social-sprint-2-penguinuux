@@ -161,7 +161,7 @@ main .profile-posts{
 	border-top: var(--border);
 }
 main .profile-posts__menu{
-	width: 300px;
+	width: 360px;
     height: 30px;
     margin: 10px auto;
     display: flex;
@@ -172,7 +172,7 @@ main .profile-posts__menu a{
 	text-transform: uppercase;
 	font-weight: 700;
 	text-decoration: none;
-	color: var(--text-colors);
+	color: var(--light-color);
 }
 
 main .profile-posts__photos-list{
@@ -188,6 +188,9 @@ main .profile-posts__photos{
     height: 293px;
 }
 main .profile-posts__photos a{}
+main .fas{
+	margin-right: 6px;
+}
 main .profile-posts__photos a figure{}
 main .profile-posts__photos a figure img{
 	width: 100%;
