@@ -28,9 +28,10 @@ body{
 	font-family: Helvetica, Arial, sans-serif;	
 	color: var(--text-colors);
 	background-color: var(--background-color);
+	padding-top: 75px;
 }
 .container{
-	width: 935px;
+	min-width: 375px;
 	height: 100%;
 	margin: 0 auto;
 }
@@ -42,30 +43,30 @@ p{
 	margin: 8px 0;
 	line-height: 1.4;
 }
-
 /*TOPO*/
 header{
 	height: 55px;
-	background-color: #fff;
-	border-bottom: 1px solid var(--light-color);
-	margin-bottom: 35px;
+    background-color: #fff;
+    border-bottom: 1px solid var(--light-color);
+    margin-bottom: 35px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 header .instagram-logo{}
 header .instagram-logo figure{
-	width: 935px;
-    margin: 0 auto;
 }
 header .instagram-logo figure img{
-	margin-top: 14px;
+	margin-top: 16px;
+    margin-left: 20px;
 }
 
 /*RODAPÉ*/
 footer{
 	color: var(--light-color);
 	height: 60px;
-	margin: 20px 0 10px 0
-	;
+	margin: 20px 0 10px 0;
 }
 
 footer .footer-nav{
@@ -89,8 +90,7 @@ main{
 main .profile-content{
 	display: flex;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 main .profile-photo{
@@ -105,33 +105,41 @@ main .profile-photo figure img{
 }
 
 main .profile-info{
-	width: 500px;
+	width: 100%;
 }
 main .profile-info h1{
 	font-size: 1.6rem;
+	padding: 0 20px;
 }
 main .profile-info h2{
 	font-weight: bolder;
+	padding: 0 20px;
 }
 main .profile-data{
 	display: flex;
-    justify-content: space-between;
-    width: 350px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-top: var(--border); 
+    border-bottom: var(--border);
+    margin-top: 20px;
 }
 main .profile-data p{}
 main .profile-data span{
 	font-weight: 700;
 }
 
-main .profile-info__list{}
+main .profile-info__list{
+	padding: 0 20px;
+}
 main .profile-info__item{}
 main .profile-info__item p{}
 main .profile-info__item a{}
 
 
 main .highlighted-stories{
-	margin: 40px 0 60px 0;
-    border: 2px solid var(--light-color);
+	margin: 40px 0 0 0;
     padding: 15px 0 15px 20px;
 	background-color: #ffffff;
 	border: var(--border);
@@ -157,16 +165,14 @@ main .add-new-highlight figure figcaption{
 	text-align: center;
 }
 
-main .profile-posts{
-	border-top: var(--border);
-}
+main .profile-posts{}
 main .profile-posts__menu{
-	width: 360px;
+	width: 100%;
     height: 30px;
     margin: 10px auto;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 main .profile-posts__menu a{
 	text-transform: uppercase;
@@ -176,16 +182,16 @@ main .profile-posts__menu a{
 }
 
 main .profile-posts__photos-list{
-	height: 620px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-	margin-top: 20px;
+	display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+    margin-top: 20px;
 }
 main .profile-posts__photos{
 	width: 293px;
     height: 293px;
+	margin: 10px;
 }
 main .profile-posts__photos a{}
 main .fas{
@@ -195,4 +201,171 @@ main .profile-posts__photos a figure{}
 main .profile-posts__photos a figure img{
 	width: 100%;
 	height: 100%;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 769px){
+	/*TOPO*/
+	.container{
+		width: 935px;
+	}
+	header{
+		height: 55px;
+		background-color: #fff;
+		border-bottom: 1px solid var(--light-color);
+		margin-bottom: 35px;
+	}
+
+	header .instagram-logo{}
+	header .instagram-logo figure{
+		width: 935px;
+		margin: 0 auto;
+	}
+	header .instagram-logo figure img{
+		margin-top: 14px;
+	}
+
+	/*RODAPÉ*/
+	footer{
+		color: var(--light-color);
+		height: 60px;
+		margin: 20px 0 10px 0
+		;
+	}
+
+	footer .footer-nav{
+		margin: 8px 0;
+		text-align: center;
+	}
+	footer .footer-nav a{
+		text-decoration: none;
+		color: inherit;
+		font-size: 0.8rem;
+	}
+
+	footer .copyright{}
+	footer .copyright p{}
+
+	/*PÁGINA INICIAL*/
+	main{
+		
+	}
+
+	main .profile-content{
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	main .profile-photo{
+		display: inline-block;
+	}
+	main .profile-photo figure{}
+	main .profile-photo figure img{
+		border-radius: 100%;
+		padding: 4.5px;
+		border: 2px solid var(--light-color);
+		background-color: var(--background-color);
+	}
+
+	main .profile-info{
+		width: 500px;
+	}
+	main .profile-info h1{
+		font-size: 1.6rem;
+		padding: 0;
+	}
+	main .profile-info h2{
+		font-weight: bolder;
+		padding: 0;
+	}
+	main .profile-data{
+		display: flex;
+		justify-content: space-between;
+		width: 350px;
+		border: none;
+	}
+	main .profile-data p{}
+	main .profile-data span{
+		font-weight: 700;
+	}
+
+	main .profile-info__list{
+		padding: 0;
+	}
+	main .profile-info__item{}
+	main .profile-info__item p{}
+	main .profile-info__item a{}
+
+
+	main .highlighted-stories{
+		margin: 40px 0 60px 0;
+		border: 2px solid var(--light-color);
+		padding: 15px 0 15px 20px;
+		background-color: #ffffff;
+		border: var(--border);
+	}
+	main .add-new-highlight{
+		display: inline-block;
+		margin-right: 50px;
+	}
+	#plus-sign{
+		padding: 23px;
+	}
+	main .add-new-highlight figure{}
+	main .add-new-highlight figure img{
+		width: 77px;
+		height: 77px;
+		/* background-color: var(--background-color); */
+		border: 1px solid var(--light-color);
+		padding: 2px;
+		border-radius: 100%;
+	}
+	main .add-new-highlight figure figcaption{
+		font-weight: 700;
+		text-align: center;
+	}
+
+	main .profile-posts{
+		border-top: var(--border);
+	}
+	main .profile-posts__menu{
+		width: 360px;
+		height: 30px;
+		margin: 10px auto;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+	}
+	main .profile-posts__menu a{
+		text-transform: uppercase;
+		font-weight: 700;
+		text-decoration: none;
+		color: var(--light-color);
+	}
+
+	main .profile-posts__photos-list{
+		height: 620px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-content: space-around;
+		margin-top: 20px;
+	}
+	main .profile-posts__photos{
+		width: 293px;
+		height: 293px;
+		margin: 0;
+	}
+	main .profile-posts__photos a{}
+	main .fas{
+		margin-right: 6px;
+	}
+	main .profile-posts__photos a figure{}
+	main .profile-posts__photos a figure img{
+		width: 100%;
+		height: 100%;
+	}
 }
