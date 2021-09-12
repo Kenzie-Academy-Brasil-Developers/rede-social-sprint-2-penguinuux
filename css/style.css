@@ -230,8 +230,7 @@ main .profile-posts__photos a figure img{
 	footer{
 		color: var(--light-color);
 		height: 60px;
-		margin: 20px 0 10px 0
-		;
+		margin: 20px 0 10px 0;
 	}
 
 	footer .footer-nav{
