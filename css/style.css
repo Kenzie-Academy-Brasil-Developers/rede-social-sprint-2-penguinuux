@@ -205,10 +205,10 @@ main .profile-posts__photos a figure img{
 
 /* MEDIA QUERIES */
 
-@media (min-width: 769px){
+@media (min-width: 880px){
 	/*TOPO*/
 	.container{
-		width: 935px;
+		max-width: 935px;
 	}
 	header{
 		height: 55px;
